@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Academy</title>
+</head>
+ <body>
+    <style>
+        .header{
+            color: black;
+            display: inline-block;
+            height: 35px;
+            display: flex;
+           -webkit-box-pack: justify;
+           justify-content: space-between;
+           font-weight: 200;
+           font-size: 0.75em;
+           padding: 6px 0 8px;
+           background-color:aqua;
+         }
+         button{
+            background-color:whitesmoke ;
+            color: black;
+
+            }
+         .main {
+           display: flex;
+          }
+         .main .left .right{
+             -webkit-box-pack: justify;
+             justify-content: space-between;
+             display: inline-block;
+            }
+          .left .choices a{
+                display: block;
+                 color: black;
+                 display: flex;
+                 text-decoration: none;
+                 padding-top: 20px;
+                 margin-top: 5px;
+              }
+            
+            .left{
+               background-color: mediumpurple ;
+               width: 9%;
+               height: 100%;
+               text-align: center;
+             }
+             .left .choices a:hover{
+                color:lavender;
+            }
+            .main .left{
+               width: 12%;
+	             margin: 1% 1% 0% 0.5%; 
+	             padding-top: 8px;
+               padding-right: 2px;
+               border: 2px;
+            }
+            .main .right .notes {
+              width: 70%;
+	            margin-top: 5px; 
+	            padding-top: 24px;
+              padding-left: 2px;
+              flex: 1;
+            } 
+            .notes {
+               display: none; 
+               padding: 10px;
+              margin-top: 10px;
+             }
+    </style>
+
+ <header>
+   <div class="header">
+      <h1>Code Academy</h1>
+      <select name="resource" id="r-1">
+        <option value="option1">Resource</option>
+        <option value="option2">Books</option>
+        <option value="option3">Reference</option>
+        <option value="option4">Megazine</option>
+        <option value="option5">Social media</option>
+      </select>
+      <select name="community" id="c-1" Resource >
+        <option value="option1">Community</option>
+        <option value="option2">Students</option>
+        <option value="option3">Teachers</option>
+        <option value="option4">Environment</option>
+        <option value="option5">School</option>
+      </select>
+      <select name="price" id="p-1">
+        <option value="option1">Price</option>
+        <option value="option2">payment method</option>
+      </select>
+      <input type="text"
+      class="search-input"
+      placeholder="search-input...">
+       <!-- <img src="icon.png" alt=""> -->
+      <button>login</button>
+      <button>signUp</button>
+    </div>
+ </header>
+  <div class="main">
+    <section class="left">
+        <div class="choices">
+            <a class="course" data-target="note-1">C++</a>
+            <a class="course" data-target="note-2">Java</a>
+            <a class="course" data-target="note-3">Javascript</a>
+            <a class="course" data-target="note-4">Ruby</a>
+            <a class="course" data-target="note-5">Python</a>
+            <a class="course" data-target="note-6">C#</a>
+            <a class="course" data-target="note-7">Php</a>
+            <a class="course" data-target="note-8">Html</a>
+            <a class="course" data-target="note-9">Css</a>
+            <a class="course" data-target="note-10">Sql</a>
+            <a class="course" data-target="note-11">R</a>
+            <a class="course" data-target="note-12">Go</a>
+        </div>
+    </section>
+    <section class="right">
+          <div class="definitions">
+           
+             <div id="note-1" class="notes"><p><h1><span> <b>C++</b></span></h1> C++ is a high-level, general-purpose programming language developed by Bjarne Stroustrup in 1983 as an extension of C. <br>
+                 It supports object-oriented, procedural, and generic programming paradigms, making it highly versatile. C++ is widely used for system/software development, game programming, and high-performance <br>
+                  applications. It offers features like classes, inheritance, polymorphism, templates, and Standard Template Library (STL). The language emphasizes performance, memory management, and direct hardware access.
+                </p>
+            </div>  
+            
+              <div id="note-2" class="notes">
+                 <p><h1><span><b>Java</b></span></h1>Java is a high-level, object-oriented programming language developed by Sun Microsystems in 1995. Known for its platform independence, Java applications run on any system with the Java Virtual Machine (JVM). <br>
+                     It is widely used for building web, mobile, and enterprise applications. Java emphasizes security, simplicity, and robustness with features like automatic memory management and a rich standard library. Its <br>
+                     "Write Once, Run Anywhere" capability makes it a popular choice for developers.</p>
+              </div>
+              <div id="note-3" class="notes">
+                <p><h1><span><b>JavaScript (JS)</b></span></h1>JavaScript (JS) is a high-level, lightweight programming language primarily used to create interactive and dynamic content on websites. Initially developed for web browsers, it is now widely used for both client-sideclient-side <br>
+                 and server-side development (e.g., with Node.js). JavaScript enables features like form validation, animations, and asynchronous data fetching (e.g., via APIs). It supports event-driven, functional, and object-oriented programming. Its 
+                 <br>flexibility and vast ecosystem make it essential for modern web development.</p>
+                 <img src="image/js img.png" alt="">
+              </div>
+              <div id="note-4" class="notes">
+                <p><h1><span><b>Ruby</b></span></h1>Ruby is a high-level, interpreted programming language created by Yukihiro Matsumoto in 1995. It emphasizes simplicity, productivity, and readability with a clean syntax inspired by languages like Perl and Smalltalk. Ruby is dynamically typed,<br>
+                 supports multiple programming paradigms, and is known for its ease of use. It powers the popular web framework Ruby on Rails, which simplifies web application development. Ruby's developer-friendly design makes it a favorite for beginners and startups.</p>
+              </div>
+              <div id="note-5" class="notes">
+                <p><h1><span><b>Python</b></span></h1>Python is a high-level, interpreted programming language created by Guido van Rossum in 1991. It emphasizes simplicity, readability, and versatility, making it ideal for beginners and professionals alike. Python supports multiple programming paradigms,<br>
+                 including procedural, object-oriented, and functional programming. It is widely used in web development, data analysis, machine learning, automation, and more. With a vast standard library and active community, Python is one of the most popular languages today.</p>
+              </div>
+              <div id="note-6" class="notes">
+                <p><h1><span><b>C#</b></span></h1>C# (pronounced "C-sharp") is a modern, object-oriented programming language developed by Microsoft in 2000 as part of the .NET framework. It is designed for building a wide range of applications, from web and desktop to mobile and games (using Unity). <br>
+                 C# combines the simplicity of high-level languages with the power of low-level languages, offering features like strong typing, garbage collection, and support for asynchronous programming. Its versatility and integration with the .NET ecosystem make it a popular choice among developers.</p>
+              </div>
+              <div id="note-7" class="notes">
+                <p><h1><span><b>PHP (Hypertext Preprocessor)</b></span></h1>PHP (Hypertext Preprocessor) is a server-side scripting language designed for web development, created by Rasmus Lerdorf in 1994. It is widely used for building dynamic websites and web applications, seamlessly integrating with HTML. PHP supports databases like MySQL,<br>
+                     PostgreSQL, and others, making it ideal for creating data-driven sites. Known for its simplicity and flexibility, PHP powers popular platforms like WordPress, Drupal, and Joomla. It is open-source, widely supported, and remains a key tool for backend web development.</p>
+              </div>
+              <div id="note-8" class="notes">
+                <p><h1><span><b>HTML</b></span></h1>HTML (HyperText Markup Language) is the standard markup language used to structure content on the web. It defines the layout of a webpage using elements like headings, paragraphs, links, images, and tables. HTML works in conjunction with CSS (for styling) and JavaScript <br>
+                     (for interactivity) to create modern web pages. Introduced in 1993, HTML is the foundation of the World Wide Web and is supported by all web browsers. Its latest version, HTML5, adds features for multimedia, semantic elements, and responsive design.</p>
+              </div>
+              <div id="note-9" class="notes">
+                <p>
+                    <h1><span><b>CSS</b></span></h1>CSS (Cascading Style Sheets) is a stylesheet language used to control the visual presentation and layout of HTML documents. It allows developers to define colors, fonts, spacing, and positioning, ensuring a consistent and appealing design across web pages. CSS separates content  <br>
+                    (HTML) from design, making it easier to maintain and update websites. It supports responsive design techniques, ensuring proper display across different devices and screen sizes. With features like Flexbox, Grid, and animations, CSS is a crucial tool for modern web design and development</p>
+              </div>
+              <div id="note-10" class="notes">
+                <p><h1><span><b>SQL</b></span></h1>SQL (Structured Query Language) is a standard language used to manage and manipulate relational databases. It enables developers to perform operations like querying, inserting, updating, and deleting data. SQL is widely used in conjunction with database systems like MySQL, PostgreSQL,<br>
+                     Oracle, and Microsoft SQL Server. It follows a declarative syntax, where users specify what they want to do rather than how to do it. SQL’s ability to handle large datasets efficiently makes it essential for backend development and data analysis.</p>
+              </div>
+              <div id="note-11" class="notes">
+                <p><h1><span><b>R</b></span></h1>R is a high-level, open-source programming language and environment designed primarily for statistical computing and data analysis. It is widely used in fields like data science, statistics, and research. R offers a rich ecosystem of packages and libraries that support data manipulation, <br> visualization, and machine learning</p>
+              </div>
+              <div id="note-12" class="notes">
+                <p><h1><span><b>Go</b></span></h1>Go, also known as Golang, is a statically typed, compiled programming language developed by Google. It emphasizes simplicity, performance, and efficiency, making it ideal for building scalable applications and system tools. Go has built-in support for concurrency, making it well-suited for modern, distributed systems. The language <br>
+                    features a clean syntax, fast compilation times, and automatic memory management. It includes a rich standard library for tasks like networking, file handling, and web development. Go's speed, scalability, and simplicity make it popular in cloud infrastructure and backend development.</p>
+              </div>
+            </div>
+      </section>
+    </div>
+    
+    
+  
+          
+
+    <script>
+    
+
+    const courses = document.querySelectorAll('.course');
+
+    courses.forEach(course => {
+    const targetId = course.getAttribute('data-target');
+    const note = document.getElementById(targetId);
+
+
+      course.addEventListener('click', (event) => {
+      event.preventDefault(); 
+      note.style.display = 'block'; 
+    });
+
+
+    course.addEventListener('dblclick', (event) => {
+    event.preventDefault(); 
+    note.style.display = 'none'; 
+     });
+   });
+    </script>
+</body>
+</html>
